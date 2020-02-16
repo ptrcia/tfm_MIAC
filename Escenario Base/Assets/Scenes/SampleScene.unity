@@ -310,8 +310,6 @@ GameObject:
   - component: {fileID: 43138077}
   - component: {fileID: 43138076}
   - component: {fileID: 43138073}
-  - component: {fileID: 43138075}
-  - component: {fileID: 43138074}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -347,37 +345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerBody: {fileID: 1381388450}
---- !u!114 &43138074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43138071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe6c9950bb77a0448b01ed13527ed743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _intensity: 0.03
-  _shader: {fileID: 4800000, guid: f5cfd386925b6a04eaaceadec7585cf4, type: 3}
---- !u!114 &43138075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43138071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397f7c103b756df40bd3f2f3abe608c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scanLineJitter: 0.01
-  _verticalJump: 0.04
-  _horizontalShake: 0.03
-  _colorDrift: 0.54
-  _shader: {fileID: 4800000, guid: 792992cf235abf040bee3897d7c7e010, type: 3}
 --- !u!81 &43138076
 AudioListener:
   m_ObjectHideFlags: 0

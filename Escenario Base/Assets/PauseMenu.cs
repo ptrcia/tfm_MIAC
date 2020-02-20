@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject camera;
+    //public GameObject Camera;
 
     public GameObject pauseMenuUI;
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            //Application.Quit();
+            //SceneManager.LoadScene("Menu");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
             if (GameIsPaused)
             {
@@ -22,7 +27,8 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 Pause();
-                //camera.GetComponent<MouseLook>().enabled = false;
+                //camera.GetComponent<MouseLook>().enabled = false;  no se esto como va para desactivar
+                //GameObject.Find("Camera").GetComponent<MouseLook>().enabled = false;
             }
 
         }

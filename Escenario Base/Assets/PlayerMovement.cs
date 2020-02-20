@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+
     Vector3 velocity;
     bool isGrounded;
     void Update()
@@ -39,9 +40,9 @@ public class PlayerMovement : MonoBehaviour
         
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            //Application.Quit();
         }
 
 

@@ -40,12 +40,6 @@ public class PlayerMovement : MonoBehaviour
         
         }
 
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            //Application.Quit();
-        }
-
-
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);

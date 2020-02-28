@@ -8,25 +8,40 @@ public class MainMenu : MonoBehaviour
     
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        CheckPauseState();
+        SceneManager.LoadScene("Escenario Base");
     }
     public void PlayScene1() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        CheckPauseState();
+        SceneManager.LoadScene("Escenario 1");
     }
     public void PlayScene2()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        CheckPauseState();
+        SceneManager.LoadScene("Escenario 2");
     }
     public void PlayScene3()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        CheckPauseState();
+        SceneManager.LoadScene("Escenario 3");
     }
 
     public void QuitGame ()
     {
         Debug.Log("Quit");
         Application.Quit();
-        //SceneManager.LoadScene("MainMenu");
     }
+
+    public void CheckPauseState()
+    {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            Time.timeScale = 1f;
+            PauseMenu.GameIsPaused = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
 }

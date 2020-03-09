@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-
+    private GameObject portal;
     public float speed = 12f;
     public float gravity = 0 -9.81f;
     public float jumpHeight = 3f;
@@ -14,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    void Start()
+    {
+        portal = GameObject.Find("portal");
+        portal.gameObject.SetActive(false);
+    }  
 
     Vector3 velocity;
     bool isGrounded;
@@ -45,4 +50,14 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
+    void OnTriggerEnter(Collider obj)
+    {
+        if (obj.tag == "Bola") 
+        {
+        Destroy(obj.gameObject);
+        portal.gameObject.SetActive(true);
+        }
+       
+    }
+
 }

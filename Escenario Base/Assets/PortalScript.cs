@@ -5,19 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PortalScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private string loadLevel;
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        void OnTriggerEnter(Collider obj){
-            //Application.LoadLevel("Escenario Base");
-            SceneManager.LoadScene("Escenario Base");
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(loadLevel);
         }
     }
 }
+

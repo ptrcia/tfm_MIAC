@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bola
   - Portal
+  - Particle
   layers:
   - Default
   - TransparentFX

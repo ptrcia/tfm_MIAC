@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     private GameObject portal;
+    private GameObject ParticleSystem1;
+    private GameObject ParticleSystem2;
     public float speed = 12f;
     public float gravity = 0 -9.81f;
     public float jumpHeight = 3f;
@@ -18,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
     {
         portal = GameObject.Find("portal");
         portal.gameObject.SetActive(false);
+        ParticleSystem1 = GameObject.Find("ParticleSystem1");
+        ParticleSystem1.gameObject.SetActive(false);
+        ParticleSystem2 = GameObject.Find("ParticleSystem2");
+        ParticleSystem2.gameObject.SetActive(false);
     }  
 
     Vector3 velocity;
@@ -52,10 +58,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnTriggerEnter(Collider obj)
     {
-        if (obj.tag == "Bola") 
+        if (obj.CompareTag("Bola")) 
         {
-        Destroy(obj.gameObject);
-        portal.gameObject.SetActive(true);
+            Destroy(obj.gameObject);
+            portal.gameObject.SetActive(true);
+            ParticleSystem1.gameObject.SetActive(true);
+            ParticleSystem2.gameObject.SetActive(true);
         }
        
     }

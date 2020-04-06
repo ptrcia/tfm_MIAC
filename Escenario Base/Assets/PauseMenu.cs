@@ -183,17 +183,27 @@ public class PauseMenu : MonoBehaviour
     public void PlayScene1()
     {
         Resume();
-        SceneManager.LoadScene("Escenario 1");
+        SceneManager.LoadScene("Escenario1");
     }
     public void PlayScene2()
     {
         Resume();
-        SceneManager.LoadScene("Escenario 2");
+        SceneManager.LoadScene("Escenario2");
     }
     public void PlayScene3()
     {
         Resume();
-        SceneManager.LoadScene("Escenario 3");
+        SceneManager.LoadScene("Escenario3");
+    }
+    public void PlayScene4()
+    {
+        Resume();
+        SceneManager.LoadScene("Escenario4");
+    }
+    public void PlayScene5()
+    {
+        Resume();
+        SceneManager.LoadScene("Escenario5");
     }
     public void QuitGame()
     {

@@ -70,8 +70,10 @@
     <Compile Include="Assets\Glitches\Escenario 2\Kino\Glitch\DigitalGlitch.cs" />
     <Compile Include="Assets\Glitches\Escenario 3\ConstantMotion.cs" />
     <Compile Include="Assets\Glitches\Escenario 3\JitterMotion.cs" />
+    <Compile Include="Assets\Glitches\Escenario 4\AnimGif.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MouseLook.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\OptionsMenu.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />

@@ -3210,8 +3210,6 @@ GameObject:
   - component: {fileID: 376606534}
   - component: {fileID: 376606533}
   - component: {fileID: 376606532}
-  - component: {fileID: 376606536}
-  - component: {fileID: 376606535}
   - component: {fileID: 376606537}
   m_Layer: 0
   m_Name: Main Camera
@@ -3285,38 +3283,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &376606535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376606531}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc98db92d8af0f64895bd511ad8ef5f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &376606536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376606531}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2f1fbec81f924846aae20ef724194ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &376606537
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5080,6 +5046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 681588837}
   - component: {fileID: 681588838}
+  - component: {fileID: 681588839}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -5167,6 +5134,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &681588839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681588836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98692683cb8ab0e449719078e6497f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 457be716cb915d544889e89049580575, type: 2}
+  slider: {fileID: 681588838}
 --- !u!1 &683795652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5757,7 +5738,8 @@ AudioSource:
   m_GameObject: {fileID: 738108653}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 457be716cb915d544889e89049580575,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 6b060df18d02be342b0002407307d5c8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.488
@@ -9337,6 +9319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 457be716cb915d544889e89049580575, type: 2}
+  slider: {fileID: 0}
 --- !u!1 &1498545107
 GameObject:
   m_ObjectHideFlags: 0

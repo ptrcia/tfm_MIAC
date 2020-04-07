@@ -202,6 +202,7 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 0784d4fd5b93bd75440d01eb2fac4233 Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 8b1fe5dfdcf943fb3b72506b9f19335f Assembly-CSharp.dll:.EnvMapAnimator
 3a23b3b7a5653d66d83d69f7e1576a87 Assembly-CSharp.dll:.GlitchEffect
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NewBehaviourScript
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 00de8b23268eebd4e9bca29080c0fd8f Assembly-CSharp.dll:Kino.AnalogGlitch
 8c50a9b0dd3bb39b1c3e716689206030 Assembly-CSharp.dll:Reaktion.ConstantMotion

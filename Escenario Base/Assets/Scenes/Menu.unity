@@ -800,7 +800,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1786499629}
-        m_MethodName: 
+        m_MethodName: PlayScene5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9319,7 +9319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 457be716cb915d544889e89049580575, type: 2}
-  slider: {fileID: 0}
+  slider: {fileID: 681588838}
 --- !u!1 &1498545107
 GameObject:
   m_ObjectHideFlags: 0
@@ -13900,7 +13900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1786499629}
-        m_MethodName: 
+        m_MethodName: PlayScene4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -10,6 +10,11 @@ public class PortalScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (loadLevel == "Menu")
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
             SceneManager.LoadScene(loadLevel);
         }
     }

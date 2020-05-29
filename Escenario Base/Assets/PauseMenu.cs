@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -16,7 +15,9 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
+        
         Buttons = this.GetComponentsInChildren<Button>(true);
+        pauseMenuUI.SetActive(false);
     }
 
     void Update()
@@ -24,11 +25,9 @@ public class PauseMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-
             if (GameIsPaused)
             {
                 Resume();
-
             }
             else
             {
@@ -40,8 +39,14 @@ public class PauseMenu : MonoBehaviour
 
     public void ChangeToEnglish()
     {
+
+        Buttons = this.GetComponentsInChildren<Button>(true);
+
         foreach (Button button in Buttons)
         {
+
+            bool state = button.IsActive();
+
             if (button.name == "QuitButton")
             {
                 button.GetComponentInChildren<Text>().text = "Quit";
@@ -78,26 +83,22 @@ public class PauseMenu : MonoBehaviour
             {
                 button.GetComponentInChildren<Text>().text = "Scene 5";
             }
-            else if (button.name == "Scene 6")
-            {
-                button.GetComponentInChildren<Text>().text = "Scene 6";
-            }
-            else if (button.name == "Scene 7")
-            {
-                button.GetComponentInChildren<Text>().text = "Scene 7";
-            }
-            else if (button.name == "Scene 8")
-            {
-                button.GetComponentInChildren<Text>().text = "Scene 8";
-            }
-         
+
         }
+
+        GlobalVariables.language = "english";
     }
 
     public void ChangeToSpanish()
     {
+
+        Buttons = this.GetComponentsInChildren<Button>(true);
+
         foreach (Button button in Buttons)
         {
+
+            bool state = button.IsActive();
+            print(state);
 
             if (button.name == "QuitButton")
             {
@@ -135,21 +136,10 @@ public class PauseMenu : MonoBehaviour
             {
                 button.GetComponentInChildren<Text>().text = "Escena 5";
             }
-            else if (button.name == "Scene 6")
-            {
-                button.GetComponentInChildren<Text>().text = "Escena 6";
-            }
-            else if (button.name == "Scene 7")
-            {
-                button.GetComponentInChildren<Text>().text = "Escena 7";
-            }
-            else if (button.name == "Scene 8")
-            {
-                button.GetComponentInChildren<Text>().text = "Escena 8";
-
-            }
 
         }
+
+        GlobalVariables.language = "spanish";
     }
 
     public void Resume()
@@ -163,6 +153,16 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+
+        if (GlobalVariables.language == "english")
+        {
+            ChangeToEnglish();
+        }
+        else
+        {
+            ChangeToSpanish();
+        }
+
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;

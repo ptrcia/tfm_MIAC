@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Deformers Assets\Editor\CreateGridMD.cs" />
+    <Compile Include="Assets\Deformers Assets\Editor\Grid3DMD.cs" />
+    <Compile Include="Assets\Deformers Assets\Editor\LinkComponents.cs" />
     <Compile Include="Assets\Glitches\Escenario 2\Kino\Glitch\Editor\AnalogGlitchEditor.cs" />
     <Compile Include="Assets\Glitches\Escenario 2\Kino\Glitch\Editor\DigitalGlitchEditor.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
@@ -308,6 +311,9 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>

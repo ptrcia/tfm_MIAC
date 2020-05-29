@@ -65,6 +65,27 @@
   <ItemGroup>
     <Compile Include="Assets\Blender\FacetedWater.cs" />
     <Compile Include="Assets\ContinueButton.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\ExtraScripts\ColorizeGrid.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\ExtraScripts\EffectorVal.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\BETABlendShapeDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\CurveShapeDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\FlareDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\ImageDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\RippleDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\SimpleBlendShape.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\SineDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Mesh Deformers\TwistDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectRotateEffectorDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectScaleEffectorDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectsImageDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectsRipple.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectsSine.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Objects Deformer\ObjectTransformEffectorDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Skinned Mesh Deformers\SkinnedMeshAnimCurveDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Skinned Mesh Deformers\SkinnedMeshFlareDeformer.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Skinned Mesh Deformers\skinnedMeshRipple.cs" />
+    <Compile Include="Assets\Deformers Assets\DeformersScripts\Skinned Mesh Deformers\SkinnedMeshSine.cs" />
+    <Compile Include="Assets\deformscript.cs" />
     <Compile Include="Assets\Glitches\Escenario 1\unityglitch-master\GlitchEffect.cs" />
     <Compile Include="Assets\Glitches\Escenario 2\Kino\Glitch\AnalogGlitch.cs" />
     <Compile Include="Assets\Glitches\Escenario 2\Kino\Glitch\DigitalGlitch.cs" />

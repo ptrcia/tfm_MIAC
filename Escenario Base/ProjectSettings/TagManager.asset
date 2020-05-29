@@ -8,6 +8,14 @@ TagManager:
   - Portal
   - Particle
   - cylinderprueba
+  - Arbol
+  - Casa
+  - Megalito
+  - Eocas
+  - Rocas
+  - Troncos
+  - Escaleras
+  - Suelo
   layers:
   - Default
   - TransparentFX
